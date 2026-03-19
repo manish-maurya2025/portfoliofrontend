@@ -1,0 +1,397 @@
+/* ===== RESET ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* ===== BODY ===== */
+body{
+background:#ffffff;
+margin-top:50px;
+transition: all 0.3s ease;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+position: fixed;
+top: 0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#222222e7;
+color:white;
+width: 100%;
+height: 50px;
+z-index:1000;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin:10px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.menu{
+display:none;
+cursor:pointer;
+}
+
+.dark-btn{
+background:none;
+border:none;
+color:white;
+font-size:20px;
+cursor:pointer;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#222;
+color:white;
+text-align:center;
+}
+
+.hero span{
+color:#00adb5;
+}
+
+.btn{
+padding:12px;
+background:#1e2167;
+color:white;
+border-radius:6px;
+cursor:pointer;
+text-decoration:none;
+}
+
+/* ===== SECTIONS ===== */
+section{
+padding:30px 20px;
+text-align:center;
+}
+
+/* ===== SKILLS ===== */
+.skill{
+max-width:400px;
+margin:auto;
+text-align:left;
+}
+
+.bar{
+background:#ddd;
+height:10px;
+margin-bottom:20px;
+}
+
+.bar span{
+display:block;
+height:10px;
+background:#00adb5;
+}
+
+/* ===== PROJECTS ===== */
+.projects{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:10px;
+width:250px;
+box-shadow:0 0 10px gray;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* ===== FORM ===== */
+form{
+display:flex;
+flex-direction:column;
+max-width:400px;
+margin:auto;
+}
+
+input,textarea{
+margin:10px;
+padding:10px;
+}
+
+button{
+padding:10px;
+background:#00adb5;
+border:none;
+color:white;
+}
+
+/* ===== FOOTER ===== */
+footer{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+div.footer-right{
+text-align:center;
+color:rgb(201,191,191);
+background-color:rgb(64,58,70);
+}
+
+/* ===== PROFILE ===== */
+.profile img{
+width:150px;
+height:190px;
+border-radius:50%;
+border:3px solid white;
+margin-bottom:20px;
+object-fit:cover;
+transition:0.3s;
+}
+
+.profile img:hover{
+transform:scale(1.1);
+}
+
+/* ===== SOCIAL ===== */
+.social-icons{
+margin-top:20px;
+}
+
+.social-icons a{
+margin:0 10px;
+font-size:22px;
+color:#9c27b0;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:white;
+transform:scale(1.2);
+}
+
+/* ===== GITHUB ===== */
+#github{
+background:#f4f6f9;
+padding:60px 20px;
+text-align:center;
+}
+
+#github h2{
+font-size:32px;
+color:#222;
+margin-bottom:15px;
+}
+
+#github p{
+font-size:18px;
+color:#555;
+margin-bottom:25px;
+}
+
+#github .btn{
+background:#24292e;
+}
+
+#github .btn:hover{
+background:#0366d6;
+transform:scale(1.05);
+}
+
+/* ===== CERTIFICATE ===== */
+/* Certificate Section */
+ #certificate{
+     padding: 60px 20px;
+      background: #f9fafc; 
+      text-align: center; 
+    }
+     #certificate h2{
+         font-size: 32px; margin-bottom: 10px; 
+        } 
+        #certificate p{ 
+            color: #555; margin-bottom: 40px; 
+        } 
+        /* Certificate Container */ 
+        .certificate-container{ 
+            display: flex; justify-content: center;
+             gap: 30px; flex-wrap: wrap; 
+            } 
+            /* Certificate Card */
+ .certificate-card{ 
+    background: white;
+     padding: 10px; 
+    /* width: 250px; */
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+     transition: 0.3s; 
+     width: 100%;
+  max-width: 400px;
+  margin: auto;
+ 
+ 
+  border-radius: 10px;
+    } 
+     .certificate-card:hover{ 
+        transform: translateY(-5px); 
+    } 
+        /* Certificate Image */ 
+.certificate-card img{ 
+    width: 100%; border-radius: 8px; 
+}
+ /* Certificate Title */ 
+ .certificate-card h3{ 
+    margin-top: 10px; font-size: 18px; 
+    width: 100%;
+  height: auto;        
+  display: block;
+  object-fit: cover;
+    text-align: center;
+  margin-top: 10px;
+}
+    /* Popup background */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+/* Popup image */
+.popup-img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* ===== INTERNSHIP ===== */
+#internship{
+padding:60px 20px;
+text-align:center;
+background:white;
+}
+
+.internship-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.internship-card{
+width:280px;
+background:#f4f6f9;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.internship-card:hover{
+transform:translateY(-5px);
+}
+
+/* ===== DARK MODE FIX (IMPORTANT 🔥) ===== */
+.dark{
+background-color:#121212;
+color:#ffffff;
+}
+
+.dark section,
+.dark #github,
+.dark #certificate,
+.dark #internship{
+background-color:#121212 !important;
+color:#ffffff !important;
+}
+
+.dark .card,
+.dark .certificate-card,
+.dark .internship-card,
+.dark .exp-card,
+.dark .education-card,
+.dark .timeline-item{
+background-color:#1e1e1e !important;
+color:#ffffff !important;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p{
+color:#ffffff !important;
+}
+
+.dark a{
+color:#ffffff !important;
+}
+
+.dark input,
+.dark textarea{
+background-color:#222 !important;
+color:#fff !important;
+border:1px solid #555;
+}
+
+.dark .navbar{
+background:#1a1a1a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+flex-direction:column;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.menu{
+display:block;
+}
+
+.projects{
+flex-direction:column;
+align-items:center;
+}
+
+}

@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>Manish Maurya | Developer Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<h2 class="logo">Maneesh</h2>
+
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button onclick="toggleMode()" class="dark-btn">🌙</button>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div class="profile">
+    <img src="image.jpg" alt="Maneesh">
+</div>
+<h1>Hello I'm <span>Maneesh Maurya</span></h1>
+
+<h2>I am <span id="typing"></span></h2>
+
+<a href="resume.pdf" download class="btn">Download Resume</a>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a fresher software developer passionate about coding.
+Currently learning Java, Data Structures, HTML, CSS and JavaScript.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+
+<p>HTML</p>
+<div class="bar"><span style="width:90%"></span></div>
+
+<p>CSS</p>
+<div class="bar"><span style="width:85%"></span></div>
+
+<p>JavaScript</p>
+<div class="bar"><span style="width:75%"></span></div>
+
+<p>Java</p>
+<div class="bar"><span style="width:80%"></span></div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>E-Commerce Website</h3>
+
+<p>Built using PHP and MySQL</p>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>Personal developer portfolio</p>
+
+</div>
+
+<div class="card">
+
+<h3>Next Step</h3>
+
+<p>Built using java spring boot framwork</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="exp-card">
+
+<h3>Web Development Learner</h3>
+
+<p>Self Learning | 2025 - Present</p>
+
+<p>Learning Java, Data Structures, HTML, CSS, JavaScript and building projects.</p>
+
+</div>
+
+</section>
+<section id="education">
+
+<h2>Education</h2>
+<section id="education">
+
+<div class="education-card">
+
+<h3>Master Degree</h3>
+
+<p><strong>MCA (Master of Computer Applications)</strong></p>
+
+<p>2025 – 2027 (Currently Pursuing)</p>
+
+<p>University Name: Babu Banarasi Das University, Lucknow</p>
+<p>First Semester SGPA: 7.34</p>
+
+</div>
+
+</section>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Bachelor Degree</h3>
+
+<p>BCA (Bachelor of Computer Application)</p>
+
+<p>2022 - 2025</p>
+<p>University Name: Babu Banarasi Das University, Lucknow</p>
+<p>CGPA: 7.26</p>
+
+</div>
+
+<div class="timeline-item"><br>
+
+<h3>Intermediate</h3>
+
+<p>Science Stream</p>
+
+<p>2020 - 2022</p>
+<p>School Name: Balrampur City Montessori I C Balrampur </p>
+<p>Percentage: 70.4%</p>
+
+</div>
+
+</div>
+<section id="internship">
+
+<h2>Internship</h2>
+
+<div class="internship-container">
+
+<div class="internship-card">
+<h3>Web Development Intern</h3>
+<p>Company: Shree Balaji Infotech</p>
+<p>Duration: 3 Months</p>
+<p>Worked on HTML, CSS, Java, React js, Tailwind, Spring Boot, Node JS, MongoDB projects.</p>
+</div>
+
+<!-- <div class="internship-card">
+<h3>Java Developer Intern</h3>
+<p>Company: XYZ Solutions</p>
+<p>Duration: 2 Months</p>
+<p>Worked on Java and Data Structures.</p>
+</div> -->
+
+</div>
+
+</section>
+</section>
+
+
+<section id="certificate">
+    <h2>My Certificates</h2>
+    <p>Here are some of my achievements and certifications.</p>
+<!-- Popup Modal -->
+<div id="popup" class="popup">
+  <span class="close">&times;</span>
+  <img class="popup-img" id="popup-img">
+</div>
+    <div class="certificate-container">
+        
+        <div class="certificate-card">
+            <img src="pyhton.jpg" alt="python" onclick="openPopup(this)">
+            <h3>Decode Python with DSA Course Certificate</h3>
+        </div>
+
+        <div class="certificate-card">
+            <img src="manishjavaa.jpeg" alt="Java Programming Certificate" onclick="openPopup(this)">
+            <h3>Java Programming OOPs Certificate</h3>
+        </div>
+
+        <div class="certificate-card">
+            <img src="Internship.jpeg" alt="Internship Certificate" onclick="openPopup(this)">
+            <h3>Spring Boot Java Internship Certificate</h3>
+        </div>
+
+    </div>
+</section>
+
+ </section>
+<section id="github">
+
+<h2>My GitHub</h2>
+
+<p>Check my coding projects on GitHub</p>
+
+<a href="https://github.com/manish-maurya2025" target="_blank" class="btn">
+
+Visit GitHub
+</a>
+
+</section> 
+
+<!-- CONTACT -->
+ 
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="email" id="email" placeholder="Your Email" required>
+
+<textarea id="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+<p id="status"></p>
+
+</form>
+
+</section>
+
+</form>
+
+</section>
+  <footer id="contact">
+    <div class="flex">
+    <div class="footer-first">
+    <h3>Maneesh's Developer Portfolio</h3>
+    <p>Email: <a href="mailto:manishmaurya6665@gmail.com">manishmaurya6665@gmail.com</a></p>
+    <p>Phone: +91-6386390665</p>
+
+    <div class="social-icons">
+    <a href="https://www.linkedin.com/in/maneesh-maurya-b14828317"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/manish-maurya2025"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/__maurya_m"><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/ManishMauryaOf1"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+ <div class="footer-right">
+        copyright &#169; Maneesh Kumar Maurya | All right reserved
+    </div>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
