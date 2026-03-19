@@ -50,7 +50,7 @@ const btn = document.querySelector("button")
 
 try{
 
-let response = await fetch("http://localhost:5000/send",{
+let response = await fetch("https://portfolio-backend-lwjc.onrender.com",{
 
 method:"POST",
 
